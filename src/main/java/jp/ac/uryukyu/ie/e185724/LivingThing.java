@@ -7,7 +7,7 @@ public class LivingThing {
     private boolean dead;
 
     /**
-     * コンストラクタ。名前、HP、攻撃力を指定する。
+     * コンストラクタ。名前，HP，攻撃力を指定する。
      * @param name 名前
      * @param hitPoint HP
      * @param attack 攻撃力
@@ -30,6 +30,10 @@ public class LivingThing {
     public void setAttack(int attack) { this.attack = attack; }
     public int getAttack() { return this.attack; }
 
+    /**
+     * dead変数のセッター。
+     * @param dead 死亡したかどうかのフラグ。trueで死亡。
+     */
     public void setDead(boolean dead) { this.dead = dead; }
     public boolean isDead() { return this.dead; }
 
